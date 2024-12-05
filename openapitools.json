@@ -1,0 +1,22 @@
+{
+    "$schema": "node_modules/@openapitools/openapi-generator-cli/config.schema.json",
+    "spaces": 2,
+    "generator-cli": {
+        "version": "6.6.0",
+        "generators": {
+            "php": {
+                "generatorName": "php",
+                "output": "src/Generated",
+                "inputSpec": "swagger.json",
+                "additionalProperties": {
+                    "invokerPackage": "WPEngine\\Generated",
+                    "modelPackage": "Model",
+                    "apiPackage": "Api",
+                    "variableNamingConvention": "camelCase",
+                    "packageName": "WPEngineAPI",
+                    "composerPackageName": "wpengine/wp-engine-api-php"
+                }
+            }
+        }
+    }
+}
