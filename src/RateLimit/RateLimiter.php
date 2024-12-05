@@ -34,23 +34,23 @@ class RateLimiter
     public function acquire(): Promise
     {
         $this->refillTokens();
+        $promise = new Promise();
 
         if ($this->tokens >= 1) {
             $this->tokens -= 1;
-            $promise = new Promise();
             $promise->resolve(true);
             return $promise;
         }
 
         // Calculate wait time until next token is available
-        $waitTime = ((1 - $this->tokens) / $this->refillRate) * 1000000; // Convert to microseconds
+        $waitTime = (int)(((1 - $this->tokens) / $this->refillRate) * 1000000); // Convert to microseconds
         
-        return new Promise(function () use (&$promise, $waitTime) {
-            usleep($waitTime);
-            $this->refillTokens();
-            $this->tokens -= 1;
-            $promise->resolve(true);
-        });
+        usleep($waitTime);
+        $this->refillTokens();
+        $this->tokens -= 1;
+        $promise->resolve(true);
+        
+        return $promise;
     }
 
     public function getAvailableTokens(): float

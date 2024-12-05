@@ -6,10 +6,7 @@ use WPEngine\WPEngineSDK;
 use WPEngine\RateLimit\RateLimitException;
 
 // Initialize the SDK with a low rate limit for demonstration
-$sdk = new WPEngineSDK([
-    'username' => 'your-username',
-    'password' => 'your-password'
-], null, 'Default', [
+$sdk = new WPEngineSDK(null, null, 'Default', [
     'maxRequestsPerSecond' => 2 // Set a low limit to demonstrate rate limiting
 ]);
 

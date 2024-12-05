@@ -7,10 +7,7 @@ use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ServerException;
 
 // Initialize the SDK with credentials
-$sdk = new WPEngineSDK([
-    'username' => 'your-username',
-    'password' => 'your-password'
-]);
+$sdk = new WPEngineSDK();
 
 // Example of handling invalid credentials
 try {

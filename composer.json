@@ -13,7 +13,8 @@
     },
     "autoload": {
         "psr-4": {
-            "WPEngine\\": "src/"
+            "WPEngine\\": "src/",
+            "WPEngineGenerated\\": "src/Generated/lib/"
         }
     },
     "autoload-dev": {
@@ -27,7 +28,7 @@
             "curl https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/6.6.0/openapi-generator-cli-6.6.0.jar -o bin/openapi-generator-cli.jar"
         ],
         "generate-api": [
-            "java -jar bin/openapi-generator-cli.jar generate -i swagger.json -g php -o src/Generated --additional-properties=invokerPackage=WPEngine\\Generated,modelPackage=Model,apiPackage=Api,variableNamingConvention=camelCase"
+            "java -jar bin/openapi-generator-cli.jar generate -i swagger.json -g php -o src/Generated --additional-properties=invokerPackage=WPEngineGenerated,modelPackage=Model,apiPackage=Api,variableNamingConvention=camelCase"
         ]
     },
     "license": "MIT"

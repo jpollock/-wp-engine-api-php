@@ -5,10 +5,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use WPEngine\WPEngineSDK;
 
 // Initialize the SDK with credentials
-$sdk = new WPEngineSDK([
-    'username' => 'your-username',
-    'password' => 'your-password'
-]);
+$sdk = new WPEngineSDK();
 
 // Example account ID (replace with a real one)
 $accountId = 'eeda3227-9a39-46ae-9e14-20958bb4e6c9';

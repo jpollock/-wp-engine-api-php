@@ -7,17 +7,17 @@ use GuzzleHttp\HandlerStack;
 use WPEngine\Config\Configuration;
 use WPEngine\Config\ConfigurationManager;
 use WPEngine\RateLimit\RateLimiter;
-use WPEngine\Generated\Api\AccountApi;
-use WPEngine\Generated\Api\AccountUserApi;
-use WPEngine\Generated\Api\BackupApi;
-use WPEngine\Generated\Api\CacheApi;
-use WPEngine\Generated\Api\DomainApi;
-use WPEngine\Generated\Api\InstallApi;
-use WPEngine\Generated\Api\SiteApi;
-use WPEngine\Generated\Api\SshKeyApi;
-use WPEngine\Generated\Api\StatusApi;
-use WPEngine\Generated\Api\UserApi;
-use WPEngine\Generated\Configuration as ApiConfiguration;
+use WPEngineGenerated\Api\AccountApi;
+use WPEngineGenerated\Api\AccountUserApi;
+use WPEngineGenerated\Api\BackupApi;
+use WPEngineGenerated\Api\CacheApi;
+use WPEngineGenerated\Api\DomainApi;
+use WPEngineGenerated\Api\InstallApi;
+use WPEngineGenerated\Api\SiteApi;
+use WPEngineGenerated\Api\SshKeyApi;
+use WPEngineGenerated\Api\StatusApi;
+use WPEngineGenerated\Api\UserApi;
+use WPEngineGenerated\Configuration as ApiConfiguration;
 
 class WPEngineSDK
 {
