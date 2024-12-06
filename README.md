@@ -2,6 +2,8 @@
 
 A PHP SDK for interacting with the WP Engine API.
 
+> **Note**: This SDK is maintained by Jeremy Pollock (jeremy.pollock@wpengine.com) and is not affiliated with or supported by WP Engine.
+
 ## Requirements
 
 - PHP 8.0 or higher
@@ -13,7 +15,7 @@ A PHP SDK for interacting with the WP Engine API.
 Install via Composer:
 
 ```bash
-composer require wpengine/wp-engine-api-php
+composer require jpollock/wp-engine-api-php
 ```
 
 ## Usage
@@ -204,18 +206,10 @@ wp-engine-api-php/
 └── swagger.json           # API specification
 ```
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-To contribute:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run tests (when available)
-5. Submit a pull request
-
 ## License
 
-This SDK is released under the MIT License. See [LICENSE](LICENSE) for details.
+This SDK is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Maintainer
+
+This SDK is maintained by Jeremy Pollock (jeremy.pollock@wpengine.com). For any questions, issues, or contributions, please reach out directly.

@@ -1,6 +1,6 @@
 {
-    "name": "wpengine/wp-engine-api-php",
-    "description": "PHP SDK for WP Engine API",
+    "name": "jpollock/wp-engine-api-php",
+    "description": "Unofficial PHP SDK for WP Engine API",
     "type": "library",
     "require": {
         "php": ">=8.0",
@@ -31,5 +31,11 @@
             "java -jar bin/openapi-generator-cli.jar generate -i swagger.json -g php -o src/Generated --additional-properties=invokerPackage=WPEngineGenerated,modelPackage=Model,apiPackage=Api,variableNamingConvention=camelCase"
         ]
     },
-    "license": "MIT"
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeremy Pollock",
+            "email": "jeremy.pollock@wpengine.com"
+        }
+    ]
 }
